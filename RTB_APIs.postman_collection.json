@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "e034e232-2997-49a5-ae8d-8c3fb67ccefd",
+		"name": "RTB_APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "updateProfile",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJqdGhRbURpNEc5WjR3aDlxTl9yWjlNeG93clRZSV9EVWpKNmNyRHhTUHpVIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnF5YjZERE9kdWZsN1JEQ3ZrdG5CbnhjVmxNRTJyWDBpckU2ZmhscVUxVG8iLCJpc3MiOiJodHRwczovL2Rldi0wNDE1MDk4Mi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDQ0MTI4OTgsImV4cCI6MTY0NDQxNjQ5OCwiY2lkIjoiMG9hM3U5ajl1YlRaSGF1bkE1ZDciLCJ1aWQiOiIwMHUzdTV2c2xxSlpTSXdLWjVkNyIsInNjcCI6WyJvcGVuaWQiXSwic3ViIjoicXdlcnR5a2V5cGFkMTYxNEBnbWFpbC5jb20ifQ.EwfADZ9_39ewlgmYR6XSA7HPmxGz3_YHJfSWx8n3uihlzywLZDoSmR6v8dUgoaQD6iiVRqm-HnEWxj7qqx_w-iIaJaLiL76_NluxAS_ncKMMrlG6Mjr3dj3CldJmF2guo6lLsmyN2xq2BnEAxTTIqUx4-baohulWxSViSWkaGAUz7tzZe7-76G0_ZrSvTwUBLTdfD8tEfuDTg9EkOpcPfC5cqmzrMsWcwaOjqd9S1oWNSQuI6myStgvKlZ57RZA5y309N6FIwFliIEzs81J81dsUfaF37CHi8gVjmtl_R2QoNoaTSdj4XxRhq2_5NJLobQrQx_bwzZRrn3DQnSt8sA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"abhishek.rawat1@imp.com\",\r\n    \"investments\":5000,\r\n    \"assets\": 100000,\r\n    \"premiums\": 500,\r\n    \"debts\": 20000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/profiles/62039f3f1edafa5e78b90377",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"profiles",
+						"62039f3f1edafa5e78b90377"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createProfile",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJqdGhRbURpNEc5WjR3aDlxTl9yWjlNeG93clRZSV9EVWpKNmNyRHhTUHpVIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmlOTGN0TlU4MklJcVhrc0ZOMXdLaWpZbld2RlRrYUFrdng1bmIxcGNUVDQiLCJpc3MiOiJodHRwczovL2Rldi0wNDE1MDk4Mi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDQ0MjAzMDgsImV4cCI6MTY0NDQyMzkwOCwiY2lkIjoiMG9hM3U5ajl1YlRaSGF1bkE1ZDciLCJ1aWQiOiIwMHUzdTV2c2xxSlpTSXdLWjVkNyIsInNjcCI6WyJvcGVuaWQiXSwic3ViIjoicXdlcnR5a2V5cGFkMTYxNEBnbWFpbC5jb20ifQ.MTGKNDftPFrwez5J-eA8_Gml5tbYY98a2r4LEoSqiJ6X4NOafL9sMeAq9dBUkndf-iI3wc3v9PpNfY3u07I1pAGbkeJq158AkLPxD0BE1cMCFKLCD00iZtlljvFsEmgZeE9NsAOkf_Pf7gBl5vHE9E8p4xR7Ns5uocdKdPKHgorJKswAGmVhuVWytbcx1lt3r5KNa0ZKRoFVZRmmc9Gcwv49eksx7rJ4zZSn78qUl0ikcJzHHxabNLGGmBh3Na9QhS05FRs0_DJbf9frkR8N0bzW_CrlpIigLeSW_2KxEOaByQuk1-e4ov4oY61usfo1irfKdmq_d4b5crE7sldRIg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"abhishek.rawat5@imp.com\",\r\n    \"investments\":5000,\r\n    \"assets\": 700000,\r\n    \"premiums\": 500,\r\n    \"debts\": 20000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/profiles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllProfiles",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJqdGhRbURpNEc5WjR3aDlxTl9yWjlNeG93clRZSV9EVWpKNmNyRHhTUHpVIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmlOTGN0TlU4MklJcVhrc0ZOMXdLaWpZbld2RlRrYUFrdng1bmIxcGNUVDQiLCJpc3MiOiJodHRwczovL2Rldi0wNDE1MDk4Mi5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2NDQ0MjAzMDgsImV4cCI6MTY0NDQyMzkwOCwiY2lkIjoiMG9hM3U5ajl1YlRaSGF1bkE1ZDciLCJ1aWQiOiIwMHUzdTV2c2xxSlpTSXdLWjVkNyIsInNjcCI6WyJvcGVuaWQiXSwic3ViIjoicXdlcnR5a2V5cGFkMTYxNEBnbWFpbC5jb20ifQ.MTGKNDftPFrwez5J-eA8_Gml5tbYY98a2r4LEoSqiJ6X4NOafL9sMeAq9dBUkndf-iI3wc3v9PpNfY3u07I1pAGbkeJq158AkLPxD0BE1cMCFKLCD00iZtlljvFsEmgZeE9NsAOkf_Pf7gBl5vHE9E8p4xR7Ns5uocdKdPKHgorJKswAGmVhuVWytbcx1lt3r5KNa0ZKRoFVZRmmc9Gcwv49eksx7rJ4zZSn78qUl0ikcJzHHxabNLGGmBh3Na9QhS05FRs0_DJbf9frkR8N0bzW_CrlpIigLeSW_2KxEOaByQuk1-e4ov4oY61usfo1irfKdmq_d4b5crE7sldRIg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/profiles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProfile",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/profiles/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"profiles",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

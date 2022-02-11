@@ -19,7 +19,8 @@
 
 •	Run mongodb server.
 
-•	Refer attached postman collection for accessing APIs.
+•	Refer attached postman collection (RTB_APIs.postman_collection.json) for accessing APIs.
+
 
 
 **Authorization: -**
